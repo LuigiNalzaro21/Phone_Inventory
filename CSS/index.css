@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kodchasan", sans-serif;
+}
+
+body {
+    background-color: #252422;
+    overflow: hidden;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #8573aa; 
+    }
+    25% {
+        color: #a576a5; 
+    }
+    50% {
+        color: #c7819d; 
+    }
+    75% {
+        color: #ce8384; 
+    }
+    100% {
+        color: #c58585; 
+    }
+}
+
+.title {
+    margin: 2%;
+    font-size: 3rem;
+    transform: translateX(15%);
+    animation: changeColor 5s infinite; 
+}
+
+.login-container {
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+    margin-top: 4%;
+    padding: 20px;
+    background-color: #484848;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 40%;
+}
+
+.login-form h2 {
+    font-size: 3rem;
+    background: linear-gradient(#eea5a6,#b784b7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.user{
+    margin-left: 2%;
+    color: white;
+    font-size: 1rem;
+    background: linear-gradient(#eea5a6, #e493b3, #b784b7, #8e7ab5);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.input-group {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: none;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    font-size: 1rem;
+    color: white;
+    width: 95%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    margin: 3% auto; 
+    display: block;
+    background-color: #484848;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+}
+
+.login-btn {
+    margin-top: 6%;
+    width: 40%;
+    padding: 15px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+    font-family: "Kodchasan", sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+.login-btn:hover {
+    color: #1e1e1e;
+    background: linear-gradient(to right, #eea5a6, #e493b3, #b784b7, #8e7ab5);
+}
+
+.login-with {
+    margin-top: 5%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.login-with span {
+    text-align: center;
+    color: white;
+}
+
+.line{
+    width: 515px;
+    transform: translateX(-1%);
+    background-color: #484848;
+    box-shadow: inset 2px 5px 5px rgba(0,0,0,0.3);
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+}
+
+.login-with i {
+    font-size: 24px;
+    color: #16283b;
+    margin: 0 5px;
+}
+
+.signup-prompt {
+    color: white;
+    margin-left: 35%;
+    margin-top: -24%;
+    text-align: center;
+}
+
+.signup-prompt span {
+    margin-right: 10px;
+}
+
+.signup-btn {
+    transform: translateY(10%);
+    width: auto; 
+    padding: 10px 50px; 
+    background-color: #c0c0c0;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem; 
+}
+
+.signup-btn:hover {
+    text-decoration: none;
+    background: linear-gradient(to right, #eea5a6, #e493b3, #b784b7, #8e7ab5);
+    color: black;
+}
+
+.login-with{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.login-with a {
+    margin-top: 3%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.login-with .fab {
+    font-size: 24px;
+    color: #16283b;
+}
+
+.login-with .fab:hover {
+    font-size: 28px;
+}
+
+.google,
+.fb,
+.tiktok {
+    width: 30px; 
+    height: auto; 
+    transition: transform 0.3s ease; 
+}
+
+.iphone {
+    transform: rotate(-45deg) translate(65%, 30%);
+    width: 70%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.google {
+    transform: translateX(-20%) scale(1.0);
+}
+
+.google:hover{
+    transform: translateX(-20%) scale(1.5);
+}
+
+.fb {
+    transform: translateX(25%) scale(1.0);
+}
+
+.fb:hover{
+    transform: translateX(25%) scale(1.5);
+}
+
+.tiktok {
+    transform: translateX(60%) scale(1.0);
+}
+
+.tiktok:hover{
+    transform: translateX(60%) scale(1.5);
+}

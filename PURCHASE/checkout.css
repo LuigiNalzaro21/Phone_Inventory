@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kodchasan", sans-serif;
+}
+
+body {
+    background-color: #252422;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding:30px 50px; 
+    font-size: 2rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.dashboard-icon {
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+.dashboard-icon:hover,
+.settings-icon:hover,
+.profile-icon:hover{
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #8573aa; 
+    }
+    25% {
+        color: #a576a5; 
+    }
+    50% {
+        color: #c7819d; 
+    }
+    75% {
+        color: #ce8384; 
+    }
+    100% {
+        color: #c58585; 
+    }
+}
+
+.welcome-text {
+    font-weight: bold;
+    transform: translateX(5%);
+    animation: changeColor 5s infinite; 
+}
+
+.settings-icon {
+    margin-left: 50%; 
+    transform: translateX(-300%);
+    cursor: pointer;
+}
+
+.profile-icon{
+    margin-left: 50%; 
+    transform: translateX(-300%);
+    cursor: pointer;
+    color: transparent;
+}
+
+.profile-icon a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Navbar 2 */
+
+header {
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    padding: 40px; 
+    margin: 2.5%;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: black;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 50px; 
+    font-size: 2rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    background-color: rgba(37, 36, 34, 0.5);
+    transition: background-color 0.3s, color 0.3s;
+    padding: 50px 20px 50px 20px;
+}
+
+.links:hover{
+    background-color: rgba(37, 36, 34, 0.5);
+    transition: background-color 0.3s, color 0.3s;
+    padding: 50px 20px 50px 20px;
+}
+
+.back-button {
+    border-radius: 50%;
+    background-color: black; 
+    padding: 15px 20px 15px 20px; 
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+} 
+
+.back-button a{
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: end;
+}
+
+/* navbar2 */
+
+.add-shipment-container {
+    background-color: #1e1e1c;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 2.5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset -5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.add-shipment-name h2 {
+    font-size: 2rem;
+}
+
+.shipment-form label {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    margin-left: 20%;
+    display: block; /* Add this line */
+}
+
+.shipment-form input,
+.shipment-form textarea {
+    font-size: 1rem;
+    color: white;
+    width: 60%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    margin: 1.5% auto;
+    display: block;
+    background-color: #484848;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.shipment-form select {
+    font-size: 1rem;
+    color: white;
+    width: 60%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    margin: 1.5% auto;
+    display: block;
+    background-color: #484848;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    font-family: "Kodchasan", sans-serif;
+}
+
+.form-buttons {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.form-buttons button {
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: background-color 0.3s;
+    margin: 2%;
+}
+
+.submit {
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    border-radius: 20px;
+    color: #252422;
+    padding: 20px 30px;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.reset {
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 30px;
+    font-family: "Kodchasan", sans-serif;
+}

@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kodchasan", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+    background-color: #252422;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding:30px 50px; 
+    font-size: 2rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.dashboard-icon {
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+.dashboard-icon:hover,
+.settings-icon:hover,
+.profile-icon:hover{
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #8573aa; 
+    }
+    25% {
+        color: #a576a5; 
+    }
+    50% {
+        color: #c7819d; 
+    }
+    75% {
+        color: #ce8384; 
+    }
+    100% {
+        color: #c58585; 
+    }
+}
+
+.welcome-text {
+    font-weight: bold;
+    transform: translateX(5%);
+    animation: changeColor 5s infinite; 
+}
+
+.settings-icon {
+    margin-left: 50%; 
+    transform: translateX(-300%);
+    cursor: pointer;
+}
+
+.profile-icon{
+    margin-left: 50%; 
+    transform: translateX(-300%);
+    cursor: pointer;
+    color: transparent;
+}
+
+.profile-icon a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-container {
+    margin-top: 1%; 
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.top-selling-phone {
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    padding: 20px;
+    text-align: center; 
+    border-radius: 10px; 
+    width: 30%;
+    height: 720px;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 20px;
+    position: relative;
+    border: none;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.top-selling-phone h2{
+    color: #252422;
+    font-size: 2rem;
+}
+
+.iphone {
+    margin-left: -5%;
+}
+
+.iphone:hover{
+    transform: scale(1.2);
+}
+
+.phone-button {
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    padding: 20px;
+    text-align: center; 
+    border-radius: 10px; 
+    width: 52%; 
+    cursor: pointer;
+    margin-left: 41%; 
+    transform: translateY(-878%);
+    position: relative;
+    border: none;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.phone-button a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #252422;
+}
+
+.category-button {
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    padding: 20px;
+    text-align: center; 
+    border-radius: 10px; 
+    width: 15%; 
+    height: 200px;
+    cursor: pointer;
+    margin-left: 41%; 
+    transform: translateY(-351%);
+    border: none;
+    position: relative;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.category-button a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #252422;
+}
+
+.customers-button {
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    padding: 20px;
+    text-align: center; 
+    border-radius: 10px; 
+    width: 20%; 
+    cursor: pointer;
+    height: 300px;
+    margin-left: 57%; 
+    transform: translateY(-301%);
+    border: none;
+    position: relative;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.customers-button a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #252422;
+}
+
+.purchase-button {
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    padding: 20px;
+    text-align: center; 
+    border-radius: 10px; 
+    width: 15%; 
+    height: 200px;
+    cursor: pointer;
+    margin-left: 78%;
+    transform: translateY(-601%);
+    border: none;
+    position: relative;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.purchase-button a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #252422;
+}
+
+.employee-button {
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    padding: 20px;
+    text-align: center; 
+    border-radius: 10px; 
+    width: 15%; 
+    height: 220px;
+    cursor: pointer;
+    margin-left: 41%; 
+    transform: translateY(-537%);
+    border: none;
+    position: relative;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.employee-button a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #252422;
+}
+
+.shipment-button {
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    padding: 20px;
+    text-align: center; 
+    border-radius: 10px; 
+    width: 36%;
+    height: 120px;
+    cursor: pointer;
+    margin-left: 57%;
+    transform: translateY(-1085%);
+    border: none;
+    position: relative;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.shipment-button a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #252422;
+}
+
+.supplier-button {
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    text-align: center; 
+    border-radius: 10px; 
+    padding: 20px;
+    width: 15%;
+    height: 82px;
+    cursor: pointer;
+    margin-left: 78%;
+    transform: translateY(-1860%);
+    border: none;
+    position: relative;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.supplier-button a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #252422;
+}
+
+.warranty-button{
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    padding: 20px;
+    text-align: center; 
+    border-radius: 10px; 
+    width: 36%;
+    height: 160px;
+    cursor: pointer;
+    margin-left: 41%;
+    transform: translateY(-853%);
+    border: none;
+    position: relative;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.warranty-button a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #252422;
+}
+
+.review-button{
+    background: linear-gradient(to bottom right, #8e7ab5, #b784b7, #e493b3, #eea5a6);
+    text-align: center; 
+    border-radius: 10px; 
+    padding: 20px;
+    width: 15%;
+    height: 160px;
+    cursor: pointer;
+    margin-left: 78%;
+    transform: translateY(-953%);
+    border: none;
+    position: relative;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.review-button a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #252422;
+}
+
+.top-selling-phone,
+.phone-button,
+.category-button,
+.customers-button,
+.purchase-button,
+.employee-button,
+.shipment-button,
+.supplier-button,
+.warranty-button,
+.review-button {
+    transition: background-color 0.9s ease;
+}
+
+.top-selling-phone:hover,
+.phone-button:hover,
+.category-button:hover,
+.customers-button:hover,
+.purchase-button:hover,
+.employee-button:hover,
+.shipment-button:hover,
+.supplier-button:hover,
+.warranty-button:hover,
+.review-button:hover {
+    background: linear-gradient(#8e7ab5, #b784b7, #e493b3, #eea5a6);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-color: #484848;
+    box-shadow: inset 2px 5px 50px rgba(0,0,0,0.3);
+}

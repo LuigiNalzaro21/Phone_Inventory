@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kodchasan", sans-serif;
+}
+
+body {
+    background-color: #252422;
+    overflow: hidden;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #8573aa; 
+    }
+    25% {
+        color: #a576a5; 
+    }
+    50% {
+        color: #c7819d; 
+    }
+    75% {
+        color: #ce8384; 
+    }
+    100% {
+        color: #c58585; 
+    }
+}
+
+.title {
+    margin: 2%;
+    font-size: 3rem;
+    transform: translateX(15%);
+    animation: changeColor 5s infinite; 
+}
+
+.signup-container{
+    width: 600px;
+    height: 890px;
+    margin: 100px auto;
+    margin-top: -5.5%;
+    padding: 20px;
+    background-color: #484848;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20%;
+}
+
+.signup-form h2 {
+    font-size: 3rem;
+    background: linear-gradient(#eea5a6,#b784b7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.user{
+    margin-top: 1%;
+    margin-left: 5%;
+    color: white;
+    font-size: 1rem;
+    background: linear-gradient(#eea5a6, #e493b3, #b784b7, #8e7ab5);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.input-group {
+    margin-top: 5%;
+    border: none;
+}
+
+.input-group label {
+    display: block;
+}
+
+.input-group input {
+    font-size: 1rem;
+    color: white;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    margin: 3% auto; 
+    margin-bottom: -2%;
+    display: block;
+    background-color: #484848;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+}
+
+.signup-btn {
+    margin-top: 8%;
+    width: 40%;
+    padding: 15px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.signup-btn:hover {
+    color: #1e1e1e;
+    background: linear-gradient(to right, #eea5a6, #e493b3, #b784b7, #8e7ab5);
+}
+
+.login-prompt {
+    color: white;
+    margin-left: -40%;
+    margin-top: -30%;
+    text-align: center;
+}
+
+.login-prompt span {
+    margin-right: 10px;
+}
+
+.login-btn {
+    transform: translateY(10%);
+    width: auto; 
+    padding: 10px 70px; 
+    background-color: #c0c0c0;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem; 
+}
+
+.login-btn:hover {
+    text-decoration: none;
+    background: linear-gradient(to right, #eea5a6, #e493b3, #b784b7, #8e7ab5);
+    color: black;
+}
+
+.iphone {
+    transform: rotate(45deg) translate(-28%, 10%);
+    width: 70%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.notification{
+    text-align: center;
+    background: linear-gradient(#eea5a6, #e493b3, #b784b7, #8e7ab5);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 5px 10px 0 10px;
+    font-size: 1.5rem;
+}
