@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Kodchasan", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 body {
@@ -66,7 +68,7 @@ body {
 
 .welcome-text {
     font-weight: bold;
-    transform: translateX(5%);
+    transform: translateX(0);
     animation: changeColor 5s infinite; 
 }
 
@@ -77,8 +79,6 @@ body {
 }
 
 .profile-icon{
-    margin-left: 50%; 
-    transform: translateX(-300%);
     cursor: pointer;
     color: transparent;
 }

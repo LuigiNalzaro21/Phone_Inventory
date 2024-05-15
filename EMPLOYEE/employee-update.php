@@ -43,20 +43,14 @@ if(isset($_POST['submit'])) {
     
     <nav class="navbar">
         <div class="left">
-            <div class="dashboard-icon">
-                <i class="fas fa-bars"></i>
-            </div>
             <div class="welcome-text">
                 <h1>WELCOME, <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'User'; ?></h1>
             </div>
         </div>
 
         <div class="right">
-            <div class="settings-icon">
-                <i class="fas fa-wrench"></i> 
-            </div>
             <div class="profile-icon">
-                <a href="../index.php" class="fas fa-user-circle"></a> 
+                <a href="../index.php" class="fas fa-user-circle"></a>
             </div>
         </div>
     </nav>
