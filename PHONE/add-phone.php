@@ -4,10 +4,7 @@ session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: index.php");
     exit();
-}
-
-include("../auth.php"); 
-// for username
+} 
 
 include("../PHONE/add.php");
 include("../PHONE/dbphone.php");
@@ -30,7 +27,7 @@ include("../PHONE/dbphone.php");
                 <i class="fas fa-bars"></i>
             </div>
             <div class="welcome-text">
-                <h1>WELCOME, <?php echo isset($firstName) ? $firstName : 'User'; ?></h1>
+                <h1>WELCOME, <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'User'; ?></h1>
             </div>
         </div>
 

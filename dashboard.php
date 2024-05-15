@@ -6,7 +6,6 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-include("auth.php"); 
 ?>
 <!DOCTYPE html>
 <html lang="en">

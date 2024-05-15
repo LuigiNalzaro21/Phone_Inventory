@@ -5,8 +5,7 @@ if (!isset($_SESSION['username'])) {
     header("Location: index.php");
     exit();
 }
-
-include("../auth.php"); 
+ 
 
 include("../SUPPLIER/add-supp.php");
 include("../SUPPLIER/dbsupplier.php");
@@ -29,7 +28,7 @@ include("../SUPPLIER/dbsupplier.php");
                 <i class="fas fa-bars"></i>
             </div>
             <div class="welcome-text">
-                <h1>WELCOME, <?php echo isset($firstName) ? $firstName : 'User'; ?></h1>
+                <h1>WELCOME, <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'User'; ?></h1>
             </div>
         </div>
 

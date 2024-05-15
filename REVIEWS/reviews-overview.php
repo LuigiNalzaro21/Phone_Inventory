@@ -6,7 +6,6 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-include("../auth.php"); 
 include("../PHONE/dbphone.php");
 
 // Fetch data from the reviews table
@@ -30,7 +29,7 @@ $result = $conn->query($sql);
                 <i class="fas fa-bars"></i>
             </div>
             <div class="welcome-text">
-                <h1>WELCOME, <?php echo isset($firstName) ? $firstName : 'User'; ?></h1>
+                <h1>WELCOME, <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'User'; ?></h1>
             </div>
         </div>
 

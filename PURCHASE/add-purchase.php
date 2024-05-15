@@ -6,8 +6,6 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-include("../auth.php");
-
 include("../PURCHASE/add-pur.php");
 include("../PURCHASE/dbpurchase.php");
 ?>
@@ -28,7 +26,7 @@ include("../PURCHASE/dbpurchase.php");
                 <i class="fas fa-bars"></i>
             </div>
             <div class="welcome-text">
-                <h1>WELCOME, <?php echo isset($firstName) ? $firstName : 'User'; ?></h1>
+                <h1>WELCOME, <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'User'; ?></h1>
             </div>
         </div>
 
