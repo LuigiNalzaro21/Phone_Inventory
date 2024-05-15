@@ -1,6 +1,5 @@
 <?php
 include("login.php");
-include("dbconnect.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +12,7 @@ include("dbconnect.php");
 </head>
 <body>
 
-    <h1 class=title>PHONE iNVENTORY</h1>
+    <h1 class="title">PHONE iNVENTORY</h1>
     <div class="login-container">
         <form action="login.php" method="POST" class="login-form">
             <h2>LOG IN</h2>
@@ -39,11 +38,6 @@ include("dbconnect.php");
             </div>
         </form>
     </div>  
-
-    <div class="signup-prompt">
-            <span>HAVEN'T SIGN UP YET?</span><br><br>
-            <a href="signup.php" class="signup-btn">SIGN UP</a>
-    </div>
 
     <img src="./Images/be56a06b6b12c6a7fe558a7dbbe28bca.png" alt="Iphone" class="iphone">
 

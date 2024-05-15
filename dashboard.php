@@ -7,7 +7,6 @@ if (!isset($_SESSION['username'])) {
 }
 
 include("auth.php"); 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +25,7 @@ include("auth.php");
                 <i class="fas fa-bars"></i>
             </div>
             <div class="welcome-text">
-                <h1>WELCOME, <?php echo isset($firstName) ? $firstName : 'User'; ?></h1>
+                <h1>WELCOME, <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'User'; ?></h1>
             </div>
         </div>
 
@@ -42,13 +41,11 @@ include("auth.php");
 
     <div class="button-container">
         <button class="top-selling-phone">
-            <a href="./top-sales.php">
-                <h2>TOP SELLING PHONES</h2>
+            <h2>TOP SELLING PHONES</h2>
             <img src="./Images/be56a06b6b12c6a7fe558a7dbbe28bca.png" alt="iPhone Picture" class="iphone">
             <div class="phone-info">
                 <h2>APPLE IPHONE 15</h2>
-                </div>
-            </a>
+            </div>
         </button>
         
         <button class="phone-button">
@@ -68,23 +65,23 @@ include("auth.php");
         </button>
 
         <button class="employee-button">
-            <a href="./EMPLOYEE/overview-employee.php">EMPLOYEE</a>
+            <a href="./EMPLOYEE/add-employee.php">EMPLOYEE</a>
         </button>
 
         <button class="shipment-button">
-            <a href="./SHIPMENT/shipment-overview.php">SHIPMENT</a>
+            <a href="./SHIPMENT/shipment-add-supplier.php">SHIPMENT</a>
         </button>
 
         <button class="supplier-button">
-            <a href="./SUPPLIER/supplier-overview.php">SUPPLIER</a>
+            <a href="./SUPPLIER/add-supplier.php">SUPPLIER</a>
         </button>
 
         <button class="warranty-button">
-            <a href="./WARRANTY/warranty-overview.php">WARRANTY</a>
+            <a href="./WARRANTY/warranty-add-warranty.php">WARRANTY</a>
         </button>
 
         <button class="review-button">
-            <a href="./REVIEWS/reviews-overview.php">REVIEW</a>
+            <a href="./REVIEWS/add-reviews.php">REVIEW</a>
         </button>
     </div>
     

@@ -1,24 +1,20 @@
 <?php
-include("dbconnect.php");
+session_start();
 
-if(isset($_POST['submit'])){
-    $username_email = $_POST['username_email'];
+$admin_username = "admin"; // Fixed admin username
+$admin_password = "admin123"; // Fixed admin password
+
+if (isset($_POST['submit'])) {
+    $username = $_POST['username_email'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM sign_up WHERE email = '$username_email' AND password = '$password'";
-
-    $result = mysqli_query($conn, $sql);
-    $count = mysqli_num_rows($result);
-    if($count == 1) {
-        session_start();
-        $_SESSION['username'] = $username_email;
+    if ($username === $admin_username && $password === $admin_password) {
+        $_SESSION['username'] = $username;
         header("Location: dashboard.php");
         exit();
     } else {
-        echo '<script>
-        window.location.href = "index.php?error=invalid_credentials";
-        alert("Login Failed. Invalid username or password!!!");
-        </script>';
+        header("Location: index.php?error=invalid_credentials");
+        exit();
     }
 }
 ?>
